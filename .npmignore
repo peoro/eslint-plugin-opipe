@@ -1,0 +1,13 @@
+
+# source directories
+/src/
+/test/
+
+# linter
+.eslintrc.js
+.nyc_output
+
+# test & coverage files
+/coverage/
+.nyc_output
+*.lcov

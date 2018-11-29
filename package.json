@@ -1,0 +1,30 @@
+{
+	"name": "@straits/eslint-plugin",
+	"version": "1.0.0",
+	"description": "ESLint preprocessor for JS files using the straits syntax",
+	"main": "src/index.js",
+	"scripts": {
+		"pretest": "eslint src test",
+		"test": "nyc mocha test/index.js",
+		"coverage": "nyc report --reporter=lcov"
+	},
+	"devDependencies": {
+		"eslint": "^5.9.0",
+		"mocha": "^5.2.0",
+		"nyc": "^13.1.0"
+	},
+	"peerDependencies": {
+		"eslint": ">=0.8.0"
+	},
+	"author": "peoro",
+	"license": "MIT",
+	"keywords": [
+		"eslint",
+		"eslint-plugin",
+		"traits",
+		"straits"
+	],
+	"homepage": "https://github.com/peoro/straits-eslint-plugin#readme",
+	"bugs": "https://github.com/peoro/straits-eslint-plugin/issues",
+	"repository": "github:peoro/straits-eslint-plugin"
+}
