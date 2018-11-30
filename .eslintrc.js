@@ -1,35 +1,6 @@
 module.exports = {
+	"extends": "@peoro/eslint-config",
 	"env": {
-		"browser": true,
-		"es6": true,
 		"node": true
-	},
-	"extends": "eslint:recommended",
-	"parserOptions": {
-		"ecmaVersion": 2018
-	},
-	"rules": {
-		"indent": [
-			"error",
-			"tab",
-			{ "SwitchCase": 1 }
-		],
-		"linebreak-style": [
-			"error",
-			"unix"
-		],
-		"semi": [
-			"error",
-			"always"
-		],
-		"no-unused-vars": [
-			"error",
-			{ "args": "none" }
-		],
-		"strict": [
-			"error",
-			"global"
-		],
-		"no-console": "off"
 	}
 };

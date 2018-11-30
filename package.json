@@ -9,6 +9,7 @@
 		"coverage": "nyc report --reporter=lcov"
 	},
 	"devDependencies": {
+		"@peoro/eslint-config": "^1.0.0",
 		"eslint": "^5.9.0",
 		"mocha": "^5.2.0",
 		"nyc": "^13.1.0"
