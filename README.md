@@ -6,7 +6,7 @@
 ## Installation
 
 ```bash
-npm install --save @straits/eslint-plugin
+npm install --save-dev @straits/eslint-plugin
 ```
 
 ## Usage
