@@ -17,13 +17,17 @@ describe(`@straits/eslint-plugin`, function(){
 				Object.*yo = Object.keys;
 				Object.*hey = Object.*yo;
 				Object.*hey( Object );
+				10.*uhm();
 			`),
 			`
 				Object._StraitsProvider = ({x = 2});
 				Object._Straits.yo = Object.keys;
 				Object._Straits.hey = Object._Straits.yo;
 				Object._Straits.hey( Object );
+				(10)._Straits.uhm();
 			`
 		);
+
+		assert.strictEqual( plugin.processors['.js'].postprocess([`hey`, `yo`], `meh`), `hey` );
 	});
 });
