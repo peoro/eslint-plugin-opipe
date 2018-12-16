@@ -4,10 +4,12 @@
 /test/
 
 # linter
-.eslintrc.js
-.nyc_output
+.eslintrc.*
 
-# test & coverage files
+# coverage files
 /coverage/
 .nyc_output
 *.lcov
+
+# CI
+.travis.*
