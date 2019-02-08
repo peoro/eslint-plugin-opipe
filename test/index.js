@@ -9,22 +9,14 @@ function process( text ) {
 	return plugin.processors['.js'].preprocess( text, 'fake.js' )[0];
 }
 
-describe(`@straits/eslint-plugin`, function(){
+describe(`eslint-plugin-opipe`, function(){
 	it(`works`, function(){
 		assert.strictEqual(
 			process(`
-				use traits * from ({x = 2});
-				Object.*yo = Object.keys;
-				Object.*hey = Object.*yo;
-				Object.*hey( Object );
-				10.*uhm();
+				x :| y() :| z.fn( a.a.a :| b[1]() )
 			`),
 			`
-				Object._StraitsProvider = ({x = 2});
-				Object._Straits.yo = Object.keys;
-				Object._Straits.hey = Object._Straits.yo;
-				Object._Straits.hey( Object );
-				(10)._Straits.uhm();
+				x * y() * z.fn( a.a.a * b[1]() )
 			`
 		);
 

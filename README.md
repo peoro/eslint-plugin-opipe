@@ -1,24 +1,24 @@
 
-# @straits/eslint-plugin ![npm (scoped)](https://img.shields.io/npm/v/@straits/eslint-plugin.svg?style=popout) ![NpmLicense](https://img.shields.io/npm/l/@straits/eslint-plugin.svg?style=popout) ![David](https://img.shields.io/david/peoro/straits-eslint-plugin.svg?style=popout)  ![Travis (.com)](https://img.shields.io/travis/com/peoro/straits-eslint-plugin.svg?style=popout) ![Coveralls github](https://img.shields.io/coveralls/github/peoro/straits-eslint-plugin.svg?style=popout)
+# eslint-plugin-opipe ![npm (scoped)](https://img.shields.io/npm/v/@eslint-plugin-opipe.svg?style=popout) ![NpmLicense](https://img.shields.io/npm/l/eslint-plugin-opipe.svg?style=popout) ![David](https://img.shields.io/david/peoro/eslint-plugin-opipe.svg?style=popout)  ![Travis (.com)](https://img.shields.io/travis/com/peoro/eslint-plugin-opipe.svg?style=popout) ![Coveralls github](https://img.shields.io/coveralls/github/peoro/eslint-plugin-opipe.svg?style=popout)
 
-> ESLint preprocessor for JS files using the straits syntax
+> ESLint preprocessor for JS files using the opipe operator
 
 ## Installation
 
 ```bash
-npm install --save-dev @straits/eslint-plugin
+npm install --save-dev eslint-plugin-opipe
 ```
 
 ## Usage
 
-Add `"@straits/eslint-plugin"` to the `plugins` array in your `.eslintrc.*`:
+Add `"eslint-plugin-opipe"` to the `plugins` array in your `.eslintrc.*`:
 
 ```json
 {
 	"plugins": [
-		"@straits/eslint-plugin"
+		"eslint-plugin-opipe"
 	]
 }
 ```
 
-That's it, ESLint will now accept straits-syntax.
+That's it, ESLint will now accept the opipe operator.
